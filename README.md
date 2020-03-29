@@ -16,7 +16,7 @@ jobs:
     name: ayy-bee
     runs-on: ubuntu-latest
     steps:
-      - uses: shmarts/ayy-bee-action@master
+      - uses: mannum/ayy-bee-action@master
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
