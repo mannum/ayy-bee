@@ -1,0 +1,33 @@
+{
+  "name": "ayy-bee",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A/B test action which merges on commit into any A/B test branches and notifies a slack channel if there's a merge conflict",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "pack": "ncc build dist/index.js -o dist",
+    "all": "npm run build && npm run pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mannum/ayy-bee-action.git"
+  },
+  "keywords": [
+    "actions",
+    "node",
+    "AB",
+    "A/B testing"
+  ],
+  "author": "shmarts",
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^2.1.1",
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5",
+    "js-yaml": "^3.13.1",
+    "typescript": "^3.8.3"
+  }
+}

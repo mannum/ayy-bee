@@ -1,0 +1,10 @@
+name: "ayy-bee"
+description: "A/B test action which merges on commit into any A/B test branches and notifies a slack channel if there's a merge conflict"
+author: "shmarts"
+inputs:
+  branchPrefix:
+    description: Prefix for A/B branches
+    default: ab
+runs:
+  using: "node12"
+  main: "dist/index.js"
