@@ -22,7 +22,7 @@
   "author": "shmarts",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/github": "^2.2.0",
+    "@actions/github": "^5.1.1",
     "axios": "^0.21.1"
   },
   "devDependencies": {
